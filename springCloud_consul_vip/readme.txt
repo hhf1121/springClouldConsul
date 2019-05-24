@@ -1,0 +1,1 @@
+vip子系统注册到consul，调用user子系统

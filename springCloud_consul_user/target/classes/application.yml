@@ -1,0 +1,23 @@
+###user服务的端口号
+server:
+  port: 8003
+###服务别名----服务注册到注册中心名称 
+spring:
+  application:
+    ###服务名称(服务注册到zk上的名称)  
+    name: consul-user
+  ###数据源
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/books?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: feixiang
+  cloud: 
+    consul: 
+    ##consul地址
+      host: 127.0.0.1
+      port: 8500
+      ##默认情况下、生成的地址是pc-XXX
+      discovery: 
+        hostname: 192.168.50.66
+        
